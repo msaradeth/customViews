@@ -8,7 +8,6 @@
 
 import UIKit
 
-@IBDesignable
 class CenterXYcontainerview: UIView {
     @IBOutlet weak var containerview: UIView!
     

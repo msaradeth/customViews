@@ -18,22 +18,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NNQ-6s-7aM">
-                                <rect key="frame" x="0.0" y="248.5" width="414" height="613.5"/>
-                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sxj-zp-kr3" customClass="CenterXYcontainerview" customModule="CustomViews" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="190" width="414" height="672"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="NNQ-6s-7aM" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.75" id="5tF-ml-bCg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NNQ-6s-7aM" secondAttribute="trailing" id="6dW-Vu-Uqb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NNQ-6s-7aM" secondAttribute="bottom" id="WpT-M7-x3w"/>
-                            <constraint firstItem="NNQ-6s-7aM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ffs-fC-szK"/>
+                            <constraint firstItem="Sxj-zp-kr3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IHt-Hq-eXR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sxj-zp-kr3" secondAttribute="trailing" id="cw5-kd-SFG"/>
+                            <constraint firstItem="Sxj-zp-kr3" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.75" id="kLw-q6-EQo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Sxj-zp-kr3" secondAttribute="bottom" id="wnL-Ii-sb6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="stackViewContainer" destination="NNQ-6s-7aM" id="Jti-Zh-A2O"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
