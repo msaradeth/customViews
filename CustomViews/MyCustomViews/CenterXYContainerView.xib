@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CenterXYContainerView" customModule="CustomViews" customModuleProvider="target">
+            <connections>
+                <outlet property="containerview" destination="PIi-Jp-g0C" id="qAb-gU-Gnt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="424" height="628"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PIi-Jp-g0C" customClass="Circle" customModule="CustomViews" customModuleProvider="target">
+                    <rect key="frame" x="137" y="239" width="150" height="150"/>
+                    <color key="backgroundColor" red="0.87539077180000002" green="0.90762629530000005" blue="0.0084472202830000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="99C-BW-fAz"/>
+                        <constraint firstAttribute="width" constant="150" id="9Fj-PF-CgL"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                            <real key="value" value="75"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cPh-Vz-ebT" customClass="MyButton" customModule="CustomViews" customModuleProvider="target">
+                    <rect key="frame" x="112" y="439" width="200" height="60"/>
+                    <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="q4y-xX-ktd"/>
+                        <constraint firstAttribute="width" constant="200" id="u1H-kb-eyA"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.50374719130000001" green="0.9704684724" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cPh-Vz-ebT" firstAttribute="top" secondItem="PIi-Jp-g0C" secondAttribute="bottom" constant="50" id="8WO-Vu-d6O"/>
+                <constraint firstItem="cPh-Vz-ebT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9vm-Qg-PWT"/>
+                <constraint firstItem="PIi-Jp-g0C" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="RdG-3l-QeJ"/>
+                <constraint firstItem="PIi-Jp-g0C" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qPS-nW-cgW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="55.072463768115945" y="125.22321428571428"/>
+        </view>
+    </objects>
+</document>

@@ -14,6 +14,10 @@
 		0EECB4172369E649004B40EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EECB4152369E649004B40EA /* LaunchScreen.storyboard */; };
 		0EECB4222369E649004B40EA /* CustomViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EECB4212369E649004B40EA /* CustomViewsTests.swift */; };
 		0EECB42D2369E649004B40EA /* CustomViewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EECB42C2369E649004B40EA /* CustomViewsUITests.swift */; };
+		0EECB43C2369E6C5004B40EA /* CenterXYContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EECB43B2369E6C5004B40EA /* CenterXYContainerView.swift */; };
+		0EECB43E2369E6E6004B40EA /* CenterXYContainerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EECB43D2369E6E6004B40EA /* CenterXYContainerView.xib */; };
+		0EED4C6D236A0700008C2CA5 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EED4C6C236A0700008C2CA5 /* Circle.swift */; };
+		0EED4C6F236A0713008C2CA5 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EED4C6E236A0713008C2CA5 /* MyButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		0EECB4282369E649004B40EA /* CustomViewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomViewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EECB42C2369E649004B40EA /* CustomViewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewsUITests.swift; sourceTree = "<group>"; };
 		0EECB42E2369E649004B40EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EECB43B2369E6C5004B40EA /* CenterXYContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterXYContainerView.swift; sourceTree = "<group>"; };
+		0EECB43D2369E6E6004B40EA /* CenterXYContainerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CenterXYContainerView.xib; sourceTree = "<group>"; };
+		0EED4C6C236A0700008C2CA5 /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
+		0EED4C6E236A0713008C2CA5 /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,7 @@
 		0EECB40B2369E647004B40EA /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				0EECB43A2369E67B004B40EA /* MyCustomViews */,
 				0EECB40C2369E647004B40EA /* AppDelegate.swift */,
 				0EECB40E2369E647004B40EA /* ViewController.swift */,
 				0EECB4102369E647004B40EA /* Main.storyboard */,
@@ -123,6 +132,17 @@
 				0EECB42E2369E649004B40EA /* Info.plist */,
 			);
 			path = CustomViewsUITests;
+			sourceTree = "<group>";
+		};
+		0EECB43A2369E67B004B40EA /* MyCustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				0EECB43B2369E6C5004B40EA /* CenterXYContainerView.swift */,
+				0EECB43D2369E6E6004B40EA /* CenterXYContainerView.xib */,
+				0EED4C6C236A0700008C2CA5 /* Circle.swift */,
+				0EED4C6E236A0713008C2CA5 /* MyButton.swift */,
+			);
+			path = MyCustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +251,7 @@
 			files = (
 				0EECB4172369E649004B40EA /* LaunchScreen.storyboard in Resources */,
 				0EECB4142369E649004B40EA /* Assets.xcassets in Resources */,
+				0EECB43E2369E6E6004B40EA /* CenterXYContainerView.xib in Resources */,
 				0EECB4122369E647004B40EA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +278,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EECB40F2369E647004B40EA /* ViewController.swift in Sources */,
+				0EED4C6D236A0700008C2CA5 /* Circle.swift in Sources */,
+				0EED4C6F236A0713008C2CA5 /* MyButton.swift in Sources */,
+				0EECB43C2369E6C5004B40EA /* CenterXYContainerView.swift in Sources */,
 				0EECB40D2369E647004B40EA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
